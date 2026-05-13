@@ -1,0 +1,80 @@
+AISINDO Symposium Website - Image Credits
+==========================================
+
+All photos are free to use under the Pexels License and Unsplash License.
+Attribution is not required, but is appreciated.
+
+----------------------------------------------------------------------
+1. speaker1.jpg  (Symposium chair - senior male professor, ~50s)
+----------------------------------------------------------------------
+Title:   Senior male professor in a classroom holding a laptop, educating university students
+Author:  Yan Krukau
+Source:  Pexels
+License: Pexels License (free for commercial and personal use, no attribution required)
+URL:     https://www.pexels.com/photo/teacher-holding-a-laptop-while-in-the-classroom-8197541/
+Direct:  https://images.pexels.com/photos/8197541/pexels-photo-8197541.jpeg
+
+----------------------------------------------------------------------
+2. speaker2.jpg  (Program chair - male lecturer at whiteboard, ~40s)
+----------------------------------------------------------------------
+Title:   A male lecturer explaining a diagram on a whiteboard
+Author:  Yan Krukau
+Source:  Pexels
+License: Pexels License
+URL:     https://www.pexels.com/photo/photo-of-man-pointing-in-the-whiteboard-6326044/
+Direct:  https://images.pexels.com/photos/6326044/pexels-photo-6326044.jpeg
+
+----------------------------------------------------------------------
+3. venue.jpg  (University building exterior with tropical plants)
+----------------------------------------------------------------------
+Title:   A building with a lot of plants in front of it
+Source:  Unsplash
+License: Unsplash License (free for commercial and personal use, no attribution required)
+URL:     https://unsplash.com/photos/a-building-with-a-lot-of-plants-in-front-of-it-RN1hQC4kBfE
+Direct:  https://images.unsplash.com/photo-1642522366375-cf22eaba6b58
+
+----------------------------------------------------------------------
+4. conference.jpg  (Conference room - audience watching presentation)
+----------------------------------------------------------------------
+Title:   Confident professor in lecture hall with diverse students engaged in learning
+Author:  Yan Krukau
+Source:  Pexels
+License: Pexels License
+URL:     https://www.pexels.com/photo/professor-standing-in-a-lecture-hall-on-the-background-of-students-sitting-at-the-desks-8197557/
+Direct:  https://images.pexels.com/photos/8197557/pexels-photo-8197557.jpeg
+
+----------------------------------------------------------------------
+5. networking.jpg  (Small group of academics talking)
+----------------------------------------------------------------------
+Title:   Group of professionals discussing business strategies in a modern office setting
+Author:  Yan Krukau
+Source:  Pexels
+License: Pexels License
+URL:     https://www.pexels.com/photo/a-man-discussing-to-his-colleagues-8101998/
+Direct:  https://images.pexels.com/photos/8101998/pexels-photo-8101998.jpeg
+
+----------------------------------------------------------------------
+6. registration.jpg  (Conference registration desk)
+----------------------------------------------------------------------
+Title:   Businesswomen registering at a conference desk, smiling and interacting
+Author:  Yan Krukau
+Source:  Pexels
+License: Pexels License
+URL:     https://www.pexels.com/photo/women-standing-by-the-registration-booth-at-a-business-conference-7648057/
+Direct:  https://images.pexels.com/photos/7648057/pexels-photo-7648057.jpeg
+
+----------------------------------------------------------------------
+License Summary
+----------------------------------------------------------------------
+Pexels License:   https://www.pexels.com/license/
+Unsplash License: https://unsplash.com/license
+
+Both licenses permit:
+  - Free use for commercial and non-commercial purposes
+  - No attribution required (though appreciated)
+  - Modification and redistribution allowed
+
+Both licenses prohibit:
+  - Selling unaltered copies of the photos
+  - Implying endorsement by the photographer or model
+  - Using identifiable people in offensive contexts
