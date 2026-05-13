@@ -1,1 +1,392 @@
-PLACEHOLDER
+/* AISINDO Symposium 2023 — Tropical Indonesian Design */
+:root {
+  --teal: #0a6e7c;
+  --teal-light: #0f8b9c;
+  --coral: #e8714a;
+  --coral-light: #f08a6a;
+  --sand: #f5e6d3;
+  --sand-dark: #e8d5b8;
+  --jati: #4a3728;
+  --jati-light: #6b5040;
+  --gold: #c8a84e;
+  --cream: #fdfbf7;
+  --white: #ffffff;
+  --text: #2c2416;
+  --text-light: #6b6152;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+/* ===== HEADER with batik-inspired border ===== */
+.site-header {
+  background: linear-gradient(135deg, var(--teal) 0%, #095563 40%, var(--jati) 100%);
+  color: var(--white);
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.site-header::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(ellipse at 20% 50%, rgba(255,255,255,0.08) 0%, transparent 70%),
+              radial-gradient(ellipse at 80% 30%, rgba(232,113,74,0.15) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.header-top {
+  background: rgba(0,0,0,0.15);
+  padding: 6px 0;
+  font-size: 11px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.header-top a { color: var(--sand); text-decoration: none; }
+.header-top a:hover { color: var(--white); }
+
+.header-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 30px 40px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.header-main .brand-mark {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  border: 2px solid var(--gold);
+  border-radius: 50%;
+  margin-bottom: 18px;
+  font-size: 28px;
+  line-height: 60px;
+  color: var(--gold);
+  transform: rotate(-15deg);
+}
+
+.site-title {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  margin-bottom: 6px;
+}
+
+.site-subtitle {
+  font-size: 14px;
+  color: var(--sand);
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+.event-meta {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 8px 22px;
+  background: rgba(255,255,255,0.12);
+  border-radius: 3px;
+  font-size: 13px;
+  color: var(--sand);
+}
+
+.event-meta span { margin: 0 12px; }
+
+/* ===== BATIK BORDER ===== */
+.batik-border {
+  height: 6px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--coral) 0px, var(--coral) 8px,
+    var(--gold) 8px, var(--gold) 12px,
+    var(--teal) 12px, var(--teal) 20px,
+    var(--white) 20px, var(--white) 24px,
+    var(--jati) 24px, var(--jati) 32px
+  );
+}
+
+/* ===== NAVIGATION ===== */
+.site-nav {
+  background: var(--white);
+  border-bottom: 1px solid #e8e0d2;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 0;
+}
+
+.nav-inner a {
+  display: block;
+  padding: 14px 24px;
+  text-decoration: none;
+  color: var(--jati);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s;
+}
+
+.nav-inner a:hover,
+.nav-inner a.active {
+  color: var(--coral);
+  border-bottom-color: var(--coral);
+  background: rgba(232,113,74,0.04);
+}
+
+/* ===== MAIN CONTENT ===== */
+.content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 30px 60px;
+}
+
+.content h1 {
+  font-size: 24px;
+  color: var(--teal);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.content h2 {
+  font-size: 18px;
+  color: var(--jati);
+  margin: 32px 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--sand-dark);
+}
+
+.content h3 {
+  font-size: 15px;
+  color: var(--text);
+  margin: 20px 0 8px;
+}
+
+.content p { margin-bottom: 12px; color: var(--text); }
+
+.content a { color: var(--teal); text-decoration: none; }
+.content a:hover { text-decoration: underline; color: var(--coral); }
+
+/* ===== CARDS ===== */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 24px 0;
+}
+
+.card {
+  background: var(--white);
+  border: 1px solid #e8e0d2;
+  border-radius: 6px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: var(--teal);
+  font-size: 14px;
+}
+
+.card-icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* ===== TOPIC TAGS ===== */
+.topic-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.topic-tag {
+  display: inline-block;
+  padding: 6px 16px;
+  background: var(--sand);
+  color: var(--jati);
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* ===== TABLES ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 13px;
+}
+
+th {
+  background: var(--teal);
+  color: var(--white);
+  padding: 10px 14px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+td {
+  padding: 10px 14px;
+  border-bottom: 1px solid #e8e0d2;
+}
+
+tr:nth-child(even) td { background: rgba(245,230,211,0.3); }
+
+/* ===== HIGHLIGHT BOX ===== */
+.highlight-box {
+  background: linear-gradient(135deg, var(--sand), var(--white));
+  border: 1px solid var(--sand-dark);
+  border-left: 4px solid var(--coral);
+  border-radius: 0 6px 6px 0;
+  padding: 18px 24px;
+  margin: 20px 0;
+}
+
+.highlight-box h3 { margin-top: 0; color: var(--coral); }
+
+.deadline-box {
+  background: linear-gradient(135deg, #fef4f0, #fff);
+  border: 2px solid var(--coral);
+  border-radius: 8px;
+  padding: 24px;
+  margin: 24px 0;
+  text-align: center;
+}
+
+.deadline-box h3 { color: var(--coral); margin-top: 0; font-size: 16px; }
+.deadline-box .big-date {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--coral);
+  margin: 10px 0;
+}
+
+/* ===== PC LIST ===== */
+.pc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 14px;
+  margin: 20px 0;
+}
+
+.pc-card {
+  background: var(--white);
+  border: 1px solid #e8e0d2;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.pc-card .name { font-weight: 600; color: var(--jati); font-size: 14px; }
+.pc-card .affil { color: var(--text-light); font-size: 12px; margin-top: 2px; }
+.pc-card .role { 
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 10px;
+  padding: 2px 8px;
+  background: var(--sand);
+  color: var(--jati);
+  border-radius: 10px;
+  letter-spacing: 0.5px;
+}
+
+/* ===== SCHEDULE ===== */
+.day-header {
+  background: linear-gradient(135deg, var(--teal), var(--teal-light));
+  color: var(--white);
+  padding: 12px 20px;
+  border-radius: 6px 6px 0 0;
+  font-weight: 600;
+  font-size: 15px;
+  margin-top: 24px;
+}
+
+.session {
+  border: 1px solid #e8e0d2;
+  border-top: none;
+  padding: 14px 20px;
+  background: var(--white);
+}
+
+.session:last-child { border-radius: 0 0 6px 6px; }
+
+.session .time { color: var(--coral); font-weight: 600; font-size: 12px; }
+.session .title { font-weight: 600; margin: 4px 0; }
+.session .detail { color: var(--text-light); font-size: 12px; }
+
+.session.break { background: var(--sand); font-style: italic; color: var(--text-light); }
+
+/* ===== PROCEEDINGS LIST ===== */
+.proc-item {
+  border-left: 3px solid var(--teal);
+  padding: 12px 20px;
+  margin: 16px 0;
+  background: var(--white);
+}
+
+.proc-item .proc-title { font-weight: 600; color: var(--jati); }
+.proc-item .proc-author { color: var(--text-light); font-size: 12px; margin-top: 2px; }
+.proc-item .proc-link { margin-top: 6px; }
+.proc-item .proc-link a {
+  display: inline-block;
+  padding: 4px 14px;
+  background: var(--teal);
+  color: var(--white);
+  border-radius: 3px;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+/* ===== FOOTER ===== */
+.site-footer {
+  background: var(--jati);
+  color: var(--sand);
+  padding: 30px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.8;
+  margin-top: 40px;
+}
+
+.site-footer .auspices {
+  display: block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 4px;
+  font-size: 11px;
+  color: var(--gold);
+}
+
+.site-footer a { color: var(--gold); text-decoration: none; }
+.site-footer a:hover { text-decoration: underline; }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .header-main { padding: 30px 20px; }
+  .site-title { font-size: 22px; }
+  .nav-inner { flex-wrap: wrap; }
+  .nav-inner a { padding: 10px 16px; font-size: 12px; }
+  .content { padding: 24px 16px 40px; }
+  .card-grid { grid-template-columns: 1fr; }
+  .pc-grid { grid-template-columns: 1fr; }
+}
